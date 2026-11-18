@@ -1,0 +1,66 @@
+body {
+    font-family: Arial;
+    background-color: #eeeeee;
+    color: black;
+    margin: 40px;
+}
+
+h1 {
+    color: darkred;
+}
+
+h2 {
+    color: darkblue;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+#message-display {
+    color: green;
+}
+/* Simple styles for the new pages. */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 8px;
+}
+
+section {
+    margin-top: 24px;
+}
+
+section img {
+    max-width: 45%;
+    height: auto;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+fieldset {
+    margin: 12px 0;
+    max-width: 600px;
+}
+
+fieldset label {
+    margin-right: 12px;
+}
+
+footer {
+    margin-top: 28px;
+}

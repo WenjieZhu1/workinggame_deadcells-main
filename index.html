@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Adventure - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dungeon Adventure</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="game.html">Game</a> |
+            <a href="aboutme.html">About Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to Dungeon Adventure!</h2>
+        <p>You wake up in a dark dungeon with <strong>50 HP</strong> and no memory of your past.</p>
+        <p>There are dangerous paths, a guard, and a hidden treasure chest.</p>
+        <p>Your goal is to <em>stay alive</em>, find useful items, and escape the dungeon.</p>
+
+        <section>
+            <h2>Explore the Dungeon</h2>
+            <img src="images/dungeon.svg" alt="A dark dungeon with two paths" width="260">
+            <img src="images/treasure.svg" alt="A treasure chest inside a dungeon" width="260">
+        </section>
+
+        <section>
+            <h2>Before You Start</h2>
+            <p>Fill out this form, then click Start Game.</p>
+            <!-- This form uses GET, so the answers appear in the game page URL. -->
+            <form action="game.html" method="get">
+                <p>
+                    <label for="player-name">Player name:</label>
+                    <input type="text" id="player-name" name="player_name" placeholder="Enter your name" required>
+                </p>
+
+                <p>
+                    <label for="player-class">Choose a character:</label>
+                    <select id="player-class" name="player_class" required>
+                        <option value="">Choose one</option>
+                        <option value="knight">Knight</option>
+                        <option value="explorer">Explorer</option>
+                        <option value="wizard">Wizard</option>
+                    </select>
+                </p>
+
+                <fieldset>
+                    <legend>Which path looks safer?</legend>
+                    <input type="radio" id="path-hall" name="first_path" value="hall" required>
+                    <label for="path-hall">The old hallway</label>
+                    <input type="radio" id="path-sewers" name="first_path" value="sewers">
+                    <label for="path-sewers">The sewers</label>
+                    <input type="radio" id="path-stairs" name="first_path" value="stairs">
+                    <label for="path-stairs">The stairs</label>
+                </fieldset>
+
+                <p>
+                    <label for="lucky-number">Lucky number (1-9):</label>
+                    <input type="number" id="lucky-number" name="lucky_number" min="1" max="9" required>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="bring-map" name="bring_map" value="yes">
+                    <label for="bring-map">I want to bring a map.</label>
+                </p>
+
+                <button type="submit">Start Game</button>
+            </form>
+            <p><small>The form is for practice. Your answers do not change the game story.</small></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="aboutme.html">Meet the Creator</a></p>
+    </footer>
+</body>
+</html>
